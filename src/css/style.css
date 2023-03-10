@@ -317,6 +317,7 @@ section {
         gap: 20px 0;
     }
     .hero__nav {
+        padding-top: 20px;
         flex-direction: column;
         gap: 25px 0;
     }
