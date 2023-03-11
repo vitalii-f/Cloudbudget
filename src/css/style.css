@@ -29,6 +29,7 @@ section {
 }
 
 .modal {
+    z-index: 2;
     display: none;
     position: fixed;
     justify-content: center;
