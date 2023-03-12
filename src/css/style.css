@@ -120,6 +120,7 @@ section {
     background-size: cover;
     color: var(--color-white);
 }
+
 .hero__wrapper {
     display: flex;
     width: 100%;
@@ -128,6 +129,7 @@ section {
     justify-content: space-between;
     flex-direction: column;
 }
+
 .hero__header {
     width: 100%;
     display: flex;
@@ -148,6 +150,7 @@ section {
 .hero__logo {
     width: 172px;
 }
+
 .hero__nav {
     display: flex;
     justify-content: space-between;
@@ -158,6 +161,7 @@ section {
     line-height: 0,875rem;
     text-transform: uppercase;
 }
+
 .hero__link {
     transition: transform 0.2s;
     -webkit-transition: transform 0.2s;
@@ -173,12 +177,14 @@ section {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
 .hero__control {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0 35px;
 }
+
 .hero__language {
     position: relative;
     cursor: pointer;
@@ -252,10 +258,6 @@ section {
     -o-transform: scale(1.1);
 }
 
-.hero__burger {
-
-}
-
 .hero__burger span {
     display: none;
     width: 25px;
@@ -303,6 +305,7 @@ section {
     align-items: center;
     gap: 40px 0;
 }
+
 .hero__title {
     font-weight: 700;
     font-size: 4.5rem;
@@ -311,12 +314,14 @@ section {
     text-transform: uppercase;
     text-align: center;
 }
+
 .hero__description {
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 150%;
     text-align: center;
 }
+
 .hero__signup {
     display: flex;
     padding: 5px;
@@ -398,6 +403,7 @@ section {
 .overview {
     background-color: var(--color-background-white);
 }
+
 .overview__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -410,6 +416,7 @@ section {
 .overview__container {
     max-width: 100%;
 }
+
 .overview__text {
     max-width: 450px;
     display: flex;
@@ -417,24 +424,28 @@ section {
     justify-content: center;
     gap: 24px 0;
 }
+
 .overview__title {
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
     color: var(--color-black);
 }
+
 .overview__description {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
     color: var(--color-black);
 }
+
 .overview__more {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
     color: var(--color-coral);
 }
+
 .overview__video_container {
     position: relative;
 }
@@ -472,6 +483,7 @@ section {
 .features {
     background-color: var(--color-background-grey);
 }
+
 .features__wrapper {
     display: flex;
     flex-direction: column;
@@ -486,6 +498,7 @@ section {
     text-align: center;
     color: var(--color-black);
 }
+
 .features__cards {
     display: flex;
     justify-content: space-between;
@@ -495,6 +508,7 @@ section {
     height: 100%;
 
 }
+
 .features__card {
     display: flex;
     flex-direction: column;
@@ -514,9 +528,6 @@ section {
     -o-transform: scale(1.1);
 }
 
-.card__img {
-
-}
 .card__text {
     max-width: 100%;
     margin-top: -25%;
@@ -530,18 +541,21 @@ section {
     text-align: center;
     height: 200px;
 }
+
 .card__title {
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.375rem;
     color: #101010;
 }
+
 .card__description {
     font-weight: 400;
     font-size: 0.8rem;
     line-height: 150%;
     color: var(--color-black);
 }
+
 .card__more {
     font-weight: 700;
     font-size: 0.75rem;
@@ -555,14 +569,13 @@ section {
     }
 }
 
-.technology {
-}
 .technology__wrapper {
     display: flex;
     flex-direction: column;
     padding: 100px 0;
     gap: 55px 0;
 }
+
 .technology__title {
     font-weight: 600;
     font-size: 2.25rem;
@@ -578,6 +591,7 @@ section {
     flex-wrap: wrap;
     gap: 30px 0;
 }
+
 .technology__item {
     max-width: 255px;
     display: flex;
@@ -590,11 +604,13 @@ section {
     text-align: center;
     color: rgba(16, 16, 16, 0.08);
 }
+
 .item__img {
     width: 80px;
     height: 80px;
     margin-top: -7vh;
 }
+
 .item__title {
     font-weight: 700;
     font-size: 1.125rem;
@@ -602,6 +618,7 @@ section {
     text-align: center;
     color: var(--color-black);
 }
+
 .item__description {
     font-weight: 400;
     font-size: 1rem;
@@ -619,6 +636,7 @@ section {
 .download {
     background-color: var(--color-coral);
 }
+
 .download__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -627,32 +645,31 @@ section {
     color: var(--color-white);
     padding: 100px 0;
 }
+
 .download__text {
     display: flex;
     flex-direction: column;
     gap: 40px 0;
     max-width: 450px;
 }
+
 .download__title {
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 2.6875rem;
 }
+
 .download__description {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
     color: var(--color--white);
 }
+
 .download__links {
     display: flex;
     align-items: center;
     gap: 0 23px;
-}
-.download__link {
-}
-.download__img {
-    
 }
 
 @media (max-width: 1000px) {
@@ -662,50 +679,55 @@ section {
     }
 }
 
-.contact {
-}
 .contact__wrapper {
     padding: 100px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .contact__text {
     display: flex;
     flex-direction: column;
     gap: 30px 0;
     max-width: 80%;
 }
+
 .contact__title {
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 2.6875rem;
     color: #000000;
 }
+
 .contact__description {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
     color: #000000;
 }
+
 .contact__form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px 0px;
 }
+
 .contact__input {
     width: 49%;
     padding: 20px 30px;
     border: 1px solid var(--color-background-grey-2);
     border-radius: 6px;
 }
+
 .contact__input:nth-child(3) {
     width: 100%;
 }
+
 .contact__input:nth-child(4) {
     width: 100%;
-
 }
+
 .contact__submit {
     width: 160px;
     height: 50px;
@@ -743,38 +765,35 @@ section {
     gap: 30px 0;
     flex-wrap: wrap;
 }
+
 .footer__block {
     display: flex;
     flex-direction: column;
     max-width: 200px;
     gap: 10px 0;
 }
+
 .block__title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.375rem;
     color: var(--color-black);
-
-}
-.block__adress {
-}
-.block__email {
-}
-.block__phone {
 }
 
 .block__links img {
     width: 200%;
 }
+
 .block__links {
     display: flex;
     gap: 0 20px;
 }
+
 .footer__img {
     max-width: 50%;
-
 }
+
 .copyright {
     font-weight: 400;
     font-size: 1rem;
