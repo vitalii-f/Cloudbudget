@@ -11,23 +11,14 @@ function openMenu() {
 
 const links = document.getElementsByClassName("hero__link");
 
-let modal = document.getElementsByClassName("modal");
-let modal_close = document.getElementsByClassName("modal__close")[0];
-
-modal_close.onclick = function(e) {
-    modal[0].style.display = "none";
-
-}
-
 for (let link of links) { 
     link.addEventListener("click", function (e) {
         e.preventDefault();
         const anchor = link.getAttribute("href");
         if (anchor == 'signup') {
             
-            console.log(modal[0]);
-            modal[0].style.display = "flex";
-        } else document.getElementsByClassName(anchor)[0].scrollIntoView({
+        } else 
+            document.getElementsByClassName(anchor)[0].scrollIntoView({
             behavior: "smooth",
             block: "start"
         });
@@ -35,19 +26,27 @@ for (let link of links) {
 }
 
 window.onclick = function (e) {
-    if (e.target == modal[0]) {
-        modal[0].style.display = "none";
+    console.log(e.target);
+    if (e.target.dataset.type) {
+        let modal = document.querySelector(`.modal[data-type='${e.target.dataset.type}']`);
+        modal.style.display = "none";
     }
 };
 
 let languageList = document.getElementsByClassName("hero__language")[0];
 
-
-
 languageList.onclick = function (e) {
     console.log("Click");
     let list = document.getElementsByClassName("language")[0];
-    if (list.style.display == "none") {
-        list.style.display = "flex";  
-    } else list.style.display = "none"; 
+    list.classList.toggle("l_active");
 };
+
+function openModal(type) {
+    let modal = document.querySelector(`.modal[data-type='${type}']`);
+    modal.style.display = "flex";
+}
+
+function closeModal(type) {
+    let modal = document.querySelector(`.modal[data-type='${type}']`);
+    modal.style.display = "none";
+}

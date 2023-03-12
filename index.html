@@ -12,10 +12,10 @@
     <script src="src/js/google-translate.js"></script>
 </head>
 <body>
-    <div class="modal">
+    <div class="modal" data-type="signup">
         <div class="modal__content">
             <form method="post" action="" class="registration">
-                <div class="modal__close">
+                <div class="modal__close" data-type="signUp" onclick="closeModal('signup')">
                     <span></span>
                     <span></span>
                 </div>
@@ -25,6 +25,15 @@
                 <button type="submit"> SIGN UP </button>
             </form>
         </div>
+    </div>
+    <div class="modal" data-type="video">
+            <div class="video__window">
+                <div class="modal__close" data-type="video" onclick="closeModal('video')">
+                    <span></span>
+                    <span></span>
+                </div>
+                <iframe src="https://www.youtube.com/embed/iN3qe0FdbfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
     </div>
     <main>
         <section class="hero">
@@ -37,14 +46,14 @@
                             <a href="features" class="hero__link">FEATURES</a>
                             <a href="technology" class="hero__link">TECHNOLOGY</a>
                             <a href="contact" class="hero__link">CONTACT</a>
-                            <a href="signup" class="hero__link">SIGN UP</a>
+                            <a href="signup" class="hero__link" onclick="openModal('signup')">SIGN UP</a>
                         </nav>
                     
                         <div class="hero__language">
                             <img class="hero__flag" src="./src/img/flag_usa.svg" alt="usa">
                             <span class="hero__current">EN</span>
                             <img class="hero__arrow" src="./src/img/arrow_down.svg" alt="arrow">
-                            <div class="language" style="display: none;">
+                            <div class="language">
                                 <img class="language__img" src="./src/img/flag_usa.svg" alt="en" data-google-lang="en">
                                 <img class="language__img" src="./src/img/flag_ua.svg" alt="uk" data-google-lang="uk">
                                 <img class="language__img" src="./src/img/flag_ru.svg" alt="ru" data-google-lang="ru">
@@ -75,10 +84,9 @@
                         <p class="overview__description"> Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
                         <a href="#" class="overview__more"> Learn More </a>
                     </div>
-                </div>
-                
-                <div class="overview__video_container">
-                    <!-- <video class="overview__video"> </video> -->
+                </div>       
+                <div class="overview__video_container" onclick="openModal('video')">
+                    <img class="overview__play" src="./src/img/overview_play.svg" alt="play">
                     <img class="overview__video" src="./src/img/overview_img.png" alt="video">
                 </div>
             </div>
